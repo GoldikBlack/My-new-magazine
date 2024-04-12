@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Coiny-Regular';
+    src: url('/fonts/Coiny-Regular.ttf');
+}
+
 :root {
     --main-color:white; 
     --secondary-color:#0A64A4;
@@ -5,8 +10,10 @@
 }
 
 * {
+    font-family: 'Coiny-Regular';
     margin: 0;
     padding: 0;
+    
 }
 
 a {
@@ -85,12 +92,15 @@ header {
     height: 100%;
     width: 100%;
     text-align: left;
+
+    &::placeholder {
+        color: var(--secondary-color);
+        padding-left: 5px;
+        font-size: 24px;
+    }
+
 }
 
-.search input::placeholder {
-    padding-left: 5px;
-    font-size: 24px;
-}
 
 .find_btn {
     position: absolute;
